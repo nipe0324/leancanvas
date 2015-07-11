@@ -1,13 +1,21 @@
 .canvases {
+
+  $base-accent-color: #477DCA !default;
+  $gray-color: #f6f6f6;
+
+  $background-color: lighten($base-accent-color, 30%); //hsl(212,80%,80%);
+  $border-color:     darken($gray-color, 20%); //hsl(212,80%,40%);
+  $textarea-color:   hsl(212,30%,94%);
+
   table#canvas {
-    background: hsl(212,80%,80%);
+    background: $background-color;
     height: 100%;
     width: 100%;
   }
   table#canvas td {
     vertical-align: top;
     padding: 4px;
-    border: 1px solid hsl(212,80%,40%);
+    border: 1px solid $border-color;
   }
   table#canvas td textarea {
     height: 90px;
@@ -17,7 +25,7 @@
     resize: none;
   }
   table#canvas td textarea:disabled {
-    background: hsl(212,30%,94%);
+    background: $textarea-color;
   }
   table#canvas td textarea#canvas_uvp {
   }
