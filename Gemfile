@@ -35,12 +35,16 @@ gem 'unicorn' # app server
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # for debug
+  gem 'pry-rails'
+  gem 'pry-doc'
   gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'web-console', '~> 2.0'
 
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0' 
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # for speed up
   gem 'spring'
-end
 
+  # for manage test data
+  gem 'seed_dump' # rake db:seed:dump for dump
+end

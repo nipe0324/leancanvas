@@ -1,0 +1,35 @@
+.canvases {
+  table#canvas {
+    background: hsl(212,80%,80%);
+    height: 100%;
+    width: 100%;
+  }
+  table#canvas td {
+    vertical-align: top;
+    padding: 4px;
+    border: 1px solid hsl(212,80%,40%);
+  }
+  table#canvas td textarea {
+    height: 90px;
+    width: 92%;
+    font-size: 0.8em;
+    padding: 4px;
+    resize: none;
+  }
+  table#canvas td textarea:disabled {
+    background: hsl(212,30%,94%);
+  }
+  table#canvas td textarea#canvas_uvp {
+  }
+  table#canvas td[rowspan="2"] textarea {
+    height: 228px;
+  }
+  table#canvas td[colspan="3"] textarea {
+    width: 96%;
+  }
+  table#canvas h2 {
+    font-size: 1.0em;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}

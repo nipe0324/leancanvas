@@ -1,0 +1,30 @@
+<h1>Listing Canvases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Created At</th>
+      <th>Updated At</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @canvases.each do |canvas| %>
+      <tr>
+        <td><%= canvas.id %></td>
+        <td><%= link_to canvas.name, canvas %></td>
+        <td><%= canvas.created_at %></td>
+        <td><%= canvas.updated_at %></td>
+        <td><%= link_to 'Edit', edit_canvas_path(canvas) %></td>
+        <td><%= link_to 'Destroy', canvas, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Canvas', new_canvas_path %>

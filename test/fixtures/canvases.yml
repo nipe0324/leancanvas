@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  name: MyString
+  problem: MyText
+  solution: MyText
+  key_metrics: MyText
+  uvp: MyText
+  unfair_advantage: MyText
+  channels: MyText
+  customer_segments: MyText
+  cost_structure: MyText
+  revenue_streams: MyText
+
+two:
+  user_id: 
+  name: MyString
+  problem: MyText
+  solution: MyText
+  key_metrics: MyText
+  uvp: MyText
+  unfair_advantage: MyText
+  channels: MyText
+  customer_segments: MyText
+  cost_structure: MyText
+  revenue_streams: MyText
